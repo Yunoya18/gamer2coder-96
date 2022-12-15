@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <title>BlockmanGo</title>
+</head>
+<body>
+    <div class="bg" id="bg">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-logo/01.png">
+            </a>
+        </div>
+        <div class="main-text-container">
+            <div class="main-text">ยินดีต้อนรับเข้าสู่โลกใบใหม่</div>
+        </div>    
+            <div class="sub-text-1">
+                "Blockman go" <br>มีมินิเกมหลากหลายประเภท <br>สามารถเลือกเล่นได้อย่างมากมาย
+            </div>
+            <div class="sub-text-2">
+                หากคุณยังไม่รู้จะเล่นมินิเกมเเนวไหน <br>ลองไปสำรวจตัวคุณกันเลย!
+            </div>
+            <a href="#section1"><i class="fa-solid fa-chevron-down" style="color: #fff;" id="arrow-down"></i></a>
+            <!--รูปจากลิ้งลอย-->
+            <img class="benson-01" src="images/benson_01.png">
+    </div>
+    <div class="gametype" id="section1">
+        <div class="q-text">คุณเป็นคนเเบบไหน?</div>
+         <div class="grid">
+              <a href="pvp.html" class="content" id="pvp">
+                   <div class="q">คุณเป็นคนชอบต่อสู้</div>
+                   <div class="de1">PvP ต่อสู้</div>
+              </a>
+              <a href="simu.html" class="content" id="simulation">
+                   <div class="q">คุณชอบที่จะสวมบทบาท</div>
+                   <div class="de2">Simulation <br>จำลองโลก<br>เเละสวมบทบาท</div>
+              </a>
+              <a href="horror.html" class="content" id="horror">
+                   <div class="q">คุณชอบความระทึก</div>
+                   <div class="de3">Horror สยองขวัญ</div>
+              </a>
+              <a href="br.html" class="content" id="battleroyale">
+                   <div class="q">เเข่งขันชิงความเป็นที่1</div>
+                   <div class="de4">Battleroyale เเย่งชิงความเป็นที่ 1</div>
+              </a>
+         </div>
+        <div class="button">
+            <p>More Games Click!</p>
+            <button id="button" onclick="info()"><i class="fa-solid fa-circle-chevron-down"></i></button>
+            <button id="close" onclick="closeinfo()"><i class="fa-solid fa-circle-chevron-up"></i></button>
+        </div>
+        <div class="infobg" id="info">
+            <div id="list"></div>
+        </div>
+
+    <script src="js/assets.js"></script>
+    <script src="js/java.js"></script>
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/00c02a5206.js" crossorigin="anonymous"></script>
+</body>
+</html>

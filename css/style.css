@@ -1,0 +1,309 @@
+body{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Chakra Petch', sans-serif;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+a {
+  text-decoration: none;
+}
+  .bg{
+    position: relative;
+    height: 100vh; 
+    width: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo{
+    padding: 20px;
+  }
+  .logo img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  #arrow-down{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    opacity: 0.5;
+    z-index: 2;
+    animation: bounce 2s infinite;
+    font-size: 48px;
+  }
+  @keyframes bounce {
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+  }
+  .benson-01{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 70vh;
+  }
+  @media only screen and (max-width: 900px) {
+    .benson-01{
+      height: 50vh;
+      width: auto;
+    }
+  }
+  .main-text{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 550;
+    border-right: 5px solid orange;
+    width: 0;
+    animation: typing 1s steps(30,end) forwards;
+  }
+
+.main-text-container{
+  margin-left: 10%;
+  display: inline-block;
+  margin-top: 3%;
+}
+@keyframes typing {
+  from{ width: 0;}
+  to { width: 100%;}
+}
+  @media only screen and (max-width: 700px) {
+    .main-text{
+      font-size: 30px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .main-text{
+      font-size: 26px;
+    }
+  }
+  .sub-text-1{
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 600px) {
+    .sub-text-1{
+      font-size: 16px;
+    }
+  }
+  .sub-text-2{
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 600px) {
+    .sub-text-2{
+      font-size: 20px;
+    }
+  }
+  .q-text{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    color:black;
+    padding-top: 30px;
+  }
+  .gametype{
+    background-color: rgb(220, 220, 220);
+    max-width: 100%;
+    margin: 0px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .grid{
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 50px;
+    justify-items: center;
+  }
+  @media screen and (min-width:900px) {
+    .grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 900px){
+    .grid{
+     grid-template-columns: 1fr ;
+    }
+  }
+  .content{
+    background-color: chocolate;
+    text-align: center;
+    width: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+  }
+  #pvp {
+  background-position: center;
+  background-size: cover;
+  color: azure;
+  }
+  #pvp:hover {
+  width: 50%;
+  border: 5px solid white;
+  }
+  #simulation {
+  background-position: center;
+  background-size:cover;
+  color: rgb(2, 41, 98);
+  }
+  #simulation:hover {
+  width: 50%;
+  border: 5px solid rgb(45, 39, 220);
+  }
+  #horror {
+  background-position: center;
+  background-size:cover;
+  color: rgb(245, 222, 179);;
+  }
+  #horror:hover {
+  width: 50%;
+  border: 5px solid rgb(153, 11, 23);
+  }
+  #battleroyale {
+  background-position: center;
+  background-size:cover;
+  color: rgb(237, 207, 73);
+  }
+  #battleroyale:hover {
+  width: 50%;
+  border: 5px solid rgb(206, 166, 20);
+  }
+  .q{
+    padding-top: 20px;
+    font-size: larger;
+    display: block;
+    height: 70%;
+  }
+  .de1 {
+    display: none;
+    color: azure;
+    font-size: 3vh;
+  }
+  .de2 {
+    display: none;
+    color: white; 
+    font-size: 3vh;
+  }
+  .de3 {
+    display: none;
+    color: rgb(245, 222, 179);
+    font-size: 3vh;
+  }
+  .de4 {
+    display: none;
+    color:rgb(255, 222, 76);
+    font-size: 3vh;
+  }
+  #pvp:hover > .de1{
+    display: block;
+  }
+  #simulation:hover > .de2{
+    display: block;
+  }
+  #horror:hover > .de3{
+    display: block;
+  }
+  #battleroyale:hover > .de4{
+    display: block;
+  }
+  .button{
+    text-align: center;
+  }
+  #button{
+    background-color: transparent;
+    border: none;
+    visibility: visible;
+    color: rgb(112, 165, 175);
+    font-size: 32px;
+  }
+  #close{
+    background-color: transparent;
+    border: none;
+    display: none;
+    color: rgb(112, 165, 175);
+    font-size: 32px;
+  }
+  .infobg{
+    background-color: rgb(60, 78, 91);
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  #list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .card {
+    width: 35vh;
+    height: 60vh;
+    background-color: rgb(162, 188, 193);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    justify-items: center;
+    color: rgb(2, 31, 74);
+  }
+  .name{
+    font-size: 3vh;
+  }
+  .text{
+    height: 20vh;
+    overflow-y: scroll;
+  }
+  .card img {
+    width: 30vh;
+    border-radius: 30px;
+  }
+
+  .card:hover{
+    box-shadow:0 0 20px rgb(94, 165, 215);
+  }
+
+.button p{
+  font-size: 20px;
+}
+
+button i {
+  transition: all 0.3s linear;
+}
+
+#button:hover{
+  color: rgb(91, 111, 164);
+}
